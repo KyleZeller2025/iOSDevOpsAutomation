@@ -1,0 +1,120 @@
+🔍 Semgrep Security Scan Results
+==================================
+
+Generated: 2025-09-10 18:00:43
+Project: /Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation
+Status: SUCCESS
+
+📋 Command Executed:
+-------------------
+/bin/bash /Users/kylezeller/Library/Developer/Xcode/DerivedData/iOSDevOpsAutomation-cwgbuvytyvmtzbczzvuooffnflez/Build/Products/Debug/iOSDevOpsAutomation.app/Contents/Resources/semgrep /Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation
+
+📤 Standard Output:
+------------------
+🔍 Running Semgrep Security Scan
+================================
+
+Project: /Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation
+Generated: Wed Sep 10 18:00:36 CDT 2025
+
+📋 Command Output:
+-----------------
+Command: /opt/homebrew/bin/semgrep scan --config=p/swift --config=p/owasp-top-ten --config=p/secrets --json --verbose /Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation
+
+{"version":"1.135.0","results":[],"errors":[],"paths":{"scanned":["/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/README.md","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/Samples/sample-project.json","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/AppDelegate.swift","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/Assets.xcassets/AccentColor.colorset/Contents.json","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/Assets.xcassets/AppIcon.appiconset/Contents.json","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/Assets.xcassets/Contents.json","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/AzurePipelinesCustomizationViewController.swift","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/Base.lproj/Main.storyboard","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/BaseCustomizationViewController.swift","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/BitriseCustomizationViewController.swift","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/CircleCICustomizationViewController.swift","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/CodemagicCustomizationViewController.swift","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/Coordinators/PipelineOptimizationViewControllerDelegate.swift","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/Domain/Entities/ProjectSummary.swift","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/Domain/PipelineCatalog.swift","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/Domain/Services/PipelineFileWriter.swift","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/GitHubActionsCustomizationViewController.swift","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/GitLabCICustomizationViewController.swift","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/JenkinsCustomizationViewController.swift","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/Logger/Logger.swift","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/MainCoordinator.swift","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/Model/ProjectModel.swift","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/PipelineOptimizationViewController.swift","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/PopupWindowController.swift","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/Resources/semgrep","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/Resources/semgrep_standalone.py","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/SemgrepResultsViewController.swift","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/SemgrepScanner.swift","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/TravisCICustomizationViewController.swift","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/ViewController.swift","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/iOSDevOpsAutomation.entitlements","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation/main.swift","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation.xcodeproj/project.pbxproj","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation.xcodeproj/project.xcworkspace/contents.xcworkspacedata","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation.xcodeproj/xcuserdata/kylezeller.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomation.xcodeproj/xcuserdata/kylezeller.xcuserdatad/xcschemes/xcschememanagement.plist","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomationTests/PipelineCatalogTests.swift","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomationTests/iOSDevOpsAutomationTests.swift","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomationUITests/iOSDevOpsAutomationUITests.swift","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/iOSDevOpsAutomationUITests/iOSDevOpsAutomationUITestsLaunchTests.swift","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/scripts/add_resources_to_project.py","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/scripts/build_standalone_semgrep.sh","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/scripts/bundle_semgrep_binary.sh","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/scripts/bundle_semgrep_pip.sh","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/scripts/create_lightweight_semgrep.sh","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/scripts/create_minimal_binary.sh","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/scripts/create_minimal_semgrep.sh","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/scripts/create_standalone_semgrep.sh","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/scripts/create_working_semgrep.sh","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/scripts/download_semgrep.sh","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/scripts/setup_semgrep.sh","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/semgrep-1.45.0.zip","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/xcodebuild.log","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/xcodebuild2.log","/Users/kylezeller/Desktop/Swift/iOSDevOpsAutomation/xcodebuild3.log"],"skipped":[]},"time":{"rules":[],"rules_parse_time":0.5041909217834473,"profiling_times":{"config_time":3.7325291633605957,"core_time":1.0076532363891602,"ignores_time":0.00041294097900390625,"total_time":4.7408740520477295},"parsing_time":{"total_time":0.0,"per_file_time":{"mean":0.0,"std_dev":0.0},"very_slow_stats":{"time_ratio":0.0,"count_ratio":0.0},"very_slow_files":[]},"scanning_time":{"total_time":0.47104334831237793,"per_file_time":{"mean":0.0030587230409894668,"std_dev":4.583331973241059e-05},"very_slow_stats":{"time_ratio":0.0,"count_ratio":0.0},"very_slow_files":[]},"matching_time":{"total_time":0.0,"per_file_and_rule_time":{"mean":0.0,"std_dev":0.0},"very_slow_stats":{"time_ratio":0.0,"count_ratio":0.0},"very_slow_rules_on_files":[]},"tainting_time":{"total_time":0.0,"per_def_and_rule_time":{"mean":0.0,"std_dev":0.0},"very_slow_stats":{"time_ratio":0.0,"count_ratio":0.0},"very_slow_rules_on_defs":[]},"fixpoint_timeouts":[],"prefiltering":{"project_level_time":0.0,"file_level_time":0.0,"rules_with_project_prefilters_ratio":0.0,"rules_with_file_prefilters_ratio":0.9900635930047694,"rules_selected_ratio":0.017488076311605722,"rules_matched_ratio":0.017488076311605722},"targets":[],"total_bytes":0,"max_memory_bytes":717244928},"engine_requested":"OSS","skipped_rules":[]}
+/opt/homebrew/Cellar/semgrep/1.135.0/libexec/lib/python3.13/site-packages/opentelemetry/instrumentation/dependencies.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import (
+running 578 rules from 3 configs
+Rules:
+<SKIPPED DATA (too many entries; use --max-log-list-entries)>
+               
+               
+┌─────────────┐
+│ Scan Status │
+└─────────────┘
+  Scanning 55 files tracked by git with 578 Code rules:
+                                                                                                                        
+  Language      Rules   Files          Origin      Rules                                                                
+ ─────────────────────────────        ───────────────────                                                               
+  <multilang>      39      55          Community     578                                                                
+  swift             2      27                                                                                           
+  bash              1      11                                                                                           
+  json              3       4                                                                                           
+  python          147       2                                                                                           
+                                                                                                                        
+SCA findings adjustment: No SCA rules to adjust
+
+========================================
+Files skipped:
+========================================
+
+  Always skipped by Semgrep:
+
+   • <none>
+
+  Skipped by .gitignore:
+  (Disable by passing --no-git-ignore)
+
+   • <all files not listed by `git ls-files` were skipped>
+
+  Skipped by .semgrepignore:
+  - https://semgrep.dev/docs/ignoring-files-folders-code/#understand-semgrep-defaults
+
+   • <none>
+
+  Skipped by --include patterns:
+
+   • <none>
+
+  Skipped by --exclude patterns:
+
+   • <none>
+
+  Files that couldn't be accessed:
+
+   • <none>
+
+  Skipped by limiting to files smaller than 1000000 bytes:
+  (Adjust with the --max-target-bytes flag)
+
+   • <none>
+
+  Partially analyzed due to parsing or internal Semgrep errors
+
+   • <none>
+
+                
+                
+┌──────────────┐
+│ Scan Summary │
+└──────────────┘
+✅ Scan completed successfully.
+ • Findings: 0 (0 blocking)
+ • Rules run: 192
+ • Targets scanned: 55
+ • Parsed lines: ~100.0%
+ • Scan was limited to files tracked by git
+Ran 192 rules on 55 files: 0 findings.
+(need more rules? `semgrep login` for additional free Semgrep Registry rules)
+
+If Semgrep missed a finding, please send us feedback to let us know!
+See https://semgrep.dev/docs/reporting-false-negatives/
+Sending pseudonymous metrics since metrics are configured to AUTO, registry usage is True, and login status is False
+
+
+✅ Scan completed successfully
+🎉 No security issues found!
+
+==================================================
+End of Semgrep Scan Report
+==================================================
+
+
+📊 Summary:
+----------
+✅ Scan completed successfully
+📄 Check the output above for detailed findings
+
+==================================================
+End of Semgrep Scan Report
+==================================================

@@ -1,0 +1,31 @@
+#!/bin/bash
+# Semgrep wrapper for iOS DevOps Automation app
+# This uses the standalone Python script
+
+# Get the project directory from the first argument
+PROJECT_PATH="$1"
+
+# Get the directory where this script is located
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PYTHON_SCRIPT="$SCRIPT_DIR/semgrep_standalone.py"
+
+# Check if the Python script exists
+if [ ! -f "$PYTHON_SCRIPT" ]; then
+    echo "❌ Standalone Semgrep script not found at: $PYTHON_SCRIPT"
+    echo "Please ensure the app was built correctly with the bundled script."
+    exit 1
+fi
+
+# Make sure the script is executable
+chmod +x "$PYTHON_SCRIPT" 2>/dev/null || true
+
+# Ensure python3 is available
+if ! command -v python3 >/dev/null 2>&1; then
+    echo "❌ python3 not found in PATH"
+    echo "Please install Python 3 or ensure it's available in your PATH."
+    echo "On macOS with Homebrew: brew install python"
+    exit 1
+fi
+
+# Run the standalone Python script
+python3 "$PYTHON_SCRIPT" "$PROJECT_PATH"

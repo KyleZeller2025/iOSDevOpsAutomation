@@ -1,0 +1,101 @@
+{
+  "name": "Sample iOS App",
+  "bundleIdentifier": "com.example.sampleapp",
+  "version": "1.0.0",
+  "buildNumber": "1",
+  "targetPlatforms": ["iOS 15.0+"],
+  "dependencies": [
+    {
+      "name": "Alamofire",
+      "version": "5.8.0",
+      "type": "swift_package",
+      "source": "https://github.com/Alamofire/Alamofire.git"
+    },
+    {
+      "name": "SnapKit",
+      "version": "5.6.0",
+      "type": "swift_package",
+      "source": "https://github.com/SnapKit/SnapKit.git"
+    }
+  ],
+  "buildSettings": {
+    "IPHONEOS_DEPLOYMENT_TARGET": "15.0",
+    "SWIFT_VERSION": "5.9",
+    "PRODUCT_BUNDLE_IDENTIFIER": "com.example.sampleapp"
+  },
+  "sourceFiles": [
+    {
+      "path": "ViewController.swift",
+      "type": "swift",
+      "size": 1024,
+      "lastModified": "2024-01-01T00:00:00Z",
+      "linesOfCode": 50
+    },
+    {
+      "path": "AppDelegate.swift",
+      "type": "swift",
+      "size": 512,
+      "lastModified": "2024-01-01T00:00:00Z",
+      "linesOfCode": 25
+    }
+  ],
+  "testTargets": [
+    {
+      "name": "SampleAppTests",
+      "type": "unit",
+      "testCount": 15,
+      "coverage": 85.0
+    },
+    {
+      "name": "SampleAppUITests",
+      "type": "ui",
+      "testCount": 8,
+      "coverage": 78.0
+    }
+  ],
+  "schemes": [
+    {
+      "name": "SampleApp",
+      "configuration": "Debug",
+      "targets": ["SampleApp"],
+      "buildAction": {
+        "parallelizeBuild": true,
+        "buildImplicitDependencies": true,
+        "runPostActionsOnFailure": false
+      },
+      "testAction": {
+        "buildConfiguration": "Debug",
+        "testPlans": [],
+        "testables": ["SampleAppTests"],
+        "shouldUseLaunchSchemeArgsEnv": true
+      },
+      "archiveAction": {
+        "buildConfiguration": "Release",
+        "revealArchiveInOrganizer": true,
+        "customArchiveName": null
+      }
+    }
+  ],
+  "certificates": [
+    {
+      "name": "iPhone Developer",
+      "type": "development",
+      "teamId": "TEAM123456",
+      "expirationDate": "2025-01-01T00:00:00Z",
+      "isValid": true
+    }
+  ],
+  "provisioningProfiles": [
+    {
+      "name": "SampleApp Development",
+      "uuid": "12345678-1234-1234-1234-123456789012",
+      "type": "development",
+      "teamId": "TEAM123456",
+      "appId": "com.example.sampleapp",
+      "expirationDate": "2025-01-01T00:00:00Z",
+      "isValid": true
+    }
+  ],
+  "lastModified": "2024-01-01T00:00:00Z",
+  "projectPath": "/path/to/SampleApp.xcodeproj"
+}
